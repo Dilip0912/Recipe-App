@@ -7,7 +7,7 @@ const recipeContainer=document.querySelector(".recipe");
 
 const renderSpinner=function(parentEl){
     const html=`
-        <div.spinner>
+        <div class="spinner">
             <svg>
                 <use href="${icons}#icon-loader"></use>
             <svg>    

@@ -593,7 +593,7 @@ console.log((0, _iconsSvgDefault.default));
 const recipeContainer = document.querySelector(".recipe");
 const renderSpinner = function(parentEl) {
     const html = `
-        <div.spinner>
+        <div class="spinner">
             <svg>
                 <use href="${(0, _iconsSvgDefault.default)}#icon-loader"></use>
             <svg>    

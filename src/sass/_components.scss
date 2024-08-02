@@ -170,21 +170,20 @@
   .spinner {
     margin: 5rem auto;
     text-align: center;
-  
-    svg {
-      height: 6rem;
-      width: 6rem;
-      fill: #f38e82;
-      animation: rotate 2s infinite linear;
-    }
+  }
+
+  .spinner svg {
+    height: 6rem;
+    width: 6rem;
+    fill: #f38e82;
+    animation: rotate 2s infinite linear;
   }
   
   @keyframes rotate {
-    0% {
-      transform: rotate(0);
+    from {
+      transform: rotate(0deg);
     }
-  
-    100% {
+    to {
       transform: rotate(360deg);
     }
   }
