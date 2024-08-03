@@ -1,4 +1,4 @@
-9698
+9701
 52C:\Users\Dilip Raj\Desktop\Forkify\package-lock.json133671869917672396 0
 83C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\modules\es.function.bind.js133671012197300023 0
 76C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\es\string\pad-end.js133671012241876825 0
@@ -54,7 +54,7 @@
 85C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\features\instance\flat-map.js133671012214658205 0
 93C:\Users\Dilip Raj\Desktop\Forkify\node_modules\caniuse-lite\data\features\wasm-tail-calls.js133670793804973908 0
 88C:\Users\Dilip Raj\Desktop\Forkify\node_modules\type-fest\source\fixed-length-array.d.ts133670793758030541 0
-46C:\Users\Dilip Raj\Desktop\Forkify\src\js\view133671801929624299 1
+46C:\Users\Dilip Raj\Desktop\Forkify\src\js\view133671933739057247 1
 90C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\features\disposable-stack\index.js133671012227809765 0
 81C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\features\url\can-parse.js133671012183267980 0
 93C:\Users\Dilip Raj\Desktop\Forkify\node_modules\css-tree\lib\syntax\node\AttributeSelector.js133670793775947643 0
@@ -70,7 +70,7 @@
 70C:\Users\Dilip Raj\Desktop\Forkify\node_modules\source-map\lib\util.js133670793757545645 0
 56C:\Users\Dilip Raj\Desktop\Forkify\src\sass\_header.scss133670100116158357 0
 88C:\Users\Dilip Raj\Desktop\Forkify\node_modules\@swc\helpers\src\_is_native_function.mjs133670793791608276 0
-39C:\Users\Dilip Raj\Desktop\Forkify\dist133671881415991617 1
+39C:\Users\Dilip Raj\Desktop\Forkify\dist133671934409624997 1
 52C:\Users\Dilip Raj\Desktop\Forkify\node_modules\.bin133670795500261189 1
 86C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\internals\well-known-symbol.js133671012270061456 0
 88C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\full\instance\find-last-index.js133671012212882557 0
@@ -99,7 +99,7 @@
 74C:\Users\Dilip Raj\Desktop\Forkify\node_modules\term-size\vendor\.DS_Store133670793749814995 0
 78C:\Users\Dilip Raj\Desktop\Forkify\node_modules\@swc\helpers\esm\_using_ctx.js133670793776915918 0
 81C:\Users\Dilip Raj\Desktop\Forkify\node_modules\@swc\helpers\src\_await_value.mjs133670793787563244 0
-41C:\Users\Dilip Raj\Desktop\Forkify\src\js133671801632129365 1
+41C:\Users\Dilip Raj\Desktop\Forkify\src\js133671925168118349 1
 107C:\Users\Dilip Raj\Desktop\Forkify\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\mdb_copy.c133670793764204688 0
 69C:\Users\Dilip Raj\Desktop\Forkify\node_modules\node-releases\LICENSE133670793749574090 0
 79C:\Users\Dilip Raj\Desktop\Forkify\node_modules\css-select\lib\pseudo-selectors133670793771244376 1
@@ -178,7 +178,7 @@
 81C:\Users\Dilip Raj\Desktop\Forkify\node_modules\svgo\plugins\removeUselessDefs.js133670793771471131 0
 102C:\Users\Dilip Raj\Desktop\Forkify\node_modules\csso\node_modules\css-tree\lib\lexer\prepare-tokens.js133670793778140385 0
 83C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\stable\instance\trim-end.js133671012264462903 0
-55C:\Users\Dilip Raj\Desktop\Forkify\src\js\controller.js133671860647509332 0
+55C:\Users\Dilip Raj\Desktop\Forkify\src\js\controller.js133671928858811946 0
 68C:\Users\Dilip Raj\Desktop\Forkify\node_modules\lmdb\dependencies\v8133670793774223361 1
 78C:\Users\Dilip Raj\Desktop\Forkify\node_modules\svgo\plugins\collapseGroups.js133670793766186296 0
 65C:\Users\Dilip Raj\Desktop\Forkify\node_modules\globals\readme.md133670793753554430 0
@@ -186,7 +186,7 @@
 84C:\Users\Dilip Raj\Desktop\Forkify\node_modules\css-tree\cjs\syntax\node\Feature.cjs133670793764999565 0
 66C:\Users\Dilip Raj\Desktop\Forkify\node_modules\parse-json\license133670793749530904 0
 93C:\Users\Dilip Raj\Desktop\Forkify\node_modules\caniuse-lite\data\features\text-decoration.js133670793802564074 0
-50C:\Users\Dilip Raj\Desktop\Forkify\src\js\model.js133671820542084294 0
+50C:\Users\Dilip Raj\Desktop\Forkify\src\js\model.js133671928499843258 0
 71C:\Users\Dilip Raj\Desktop\Forkify\node_modules\semver\functions\gte.js133670793758070403 0
 54C:\Users\Dilip Raj\Desktop\Forkify\src\img\favicon.png133670095129240088 0
 85C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\internals\set-intersection.js133671012249937717 0
@@ -1572,7 +1572,7 @@
 80C:\Users\Dilip Raj\Desktop\Forkify\node_modules\immutable\dist\immutable.js.flow133670795489820787 0
 70C:\Users\Dilip Raj\Desktop\Forkify\node_modules\escalade\dist\index.js133670793750887337 0
 93C:\Users\Dilip Raj\Desktop\Forkify\node_modules\caniuse-lite\data\features\form-validation.js133670793787476365 0
-58C:\Users\Dilip Raj\Desktop\Forkify\dist\icons.21bad73c.svg133671880189779976 0
+58C:\Users\Dilip Raj\Desktop\Forkify\dist\icons.21bad73c.svg133671934399514567 0
 91C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\features\reflect\delete-property.js133671012189199996 0
 67C:\Users\Dilip Raj\Desktop\Forkify\node_modules\ordered-binary\dist133670793750515537 1
 64C:\Users\Dilip Raj\Desktop\Forkify\node_modules\base-x\README.md133670793752605764 0
@@ -6588,6 +6588,7 @@
 90C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\features\object\iterate-entries.js133671012233545315 0
 72C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\features\reflect133671012262466816 1
 73C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\features\index.js133671012227887179 0
+51C:\Users\Dilip Raj\Desktop\Forkify\src\js\config.js133671912847045739 0
 68C:\Users\Dilip Raj\Desktop\Forkify\node_modules\core-js\features\map133671012267864085 1
 84C:\Users\Dilip Raj\Desktop\Forkify\node_modules\@parcel\utils\test\sourcemap.test.js133670793795799552 0
 97C:\Users\Dilip Raj\Desktop\Forkify\node_modules\caniuse-lite\data\features\css-filter-function.js133670793776454367 0
@@ -8654,7 +8655,7 @@
 80C:\Users\Dilip Raj\Desktop\Forkify\node_modules\@parcel\workers\test\integration133670793759453052 1
 92C:\Users\Dilip Raj\Desktop\Forkify\node_modules\@parcel\workers\lib\process\ProcessWorker.js133670793764975189 0
 91C:\Users\Dilip Raj\Desktop\Forkify\node_modules\@parcel\workers\test\integration\workerfarm133670793765306869 1
-58C:\Users\Dilip Raj\Desktop\Forkify\dist\icons.dfd7a6db.svg133671880190030073 0
+58C:\Users\Dilip Raj\Desktop\Forkify\dist\icons.dfd7a6db.svg133671934399504572 0
 102C:\Users\Dilip Raj\Desktop\Forkify\node_modules\@parcel\workers\test\integration\workerfarm\logging.js133670793762605759 0
 112C:\Users\Dilip Raj\Desktop\Forkify\node_modules\@parcel\workers\test\integration\workerfarm\master-process-id.js133670793763124880 0
 99C:\Users\Dilip Raj\Desktop\Forkify\node_modules\@parcel\workers\test\integration\workerfarm\ping.js133670793763696092 0
@@ -9691,9 +9692,11 @@
 57C:\Users\Dilip Raj\Desktop\Forkify\dist\index.62406edb.js133670826130154998 0
 67C:\Users\Dilip Raj\Desktop\Forkify\dist\index.f7626f62.css.23928.5y133671574367702434 0
 50C:\Users\Dilip Raj\Desktop\Forkify\dist\index.html133671879346098714 0
-60C:\Users\Dilip Raj\Desktop\Forkify\dist\favicon.8b2f57bf.png133671880189360154 0
-57C:\Users\Dilip Raj\Desktop\Forkify\dist\logo.726d37a8.png133671880189491154 0
-58C:\Users\Dilip Raj\Desktop\Forkify\dist\index.f7626f62.css133671880189779976 0
-62C:\Users\Dilip Raj\Desktop\Forkify\dist\index.f7626f62.css.map133671880189857317 0
-57C:\Users\Dilip Raj\Desktop\Forkify\dist\index.e37f48ea.js133671881415911663 0
-61C:\Users\Dilip Raj\Desktop\Forkify\dist\index.e37f48ea.js.map133671881415967758 0
+52C:\Users\Dilip Raj\Desktop\Forkify\src\js\helpers.js133671934405222731 0
+56C:\Users\Dilip Raj\Desktop\Forkify\src\js\view\config.js133671934019363870 0
+60C:\Users\Dilip Raj\Desktop\Forkify\dist\favicon.8b2f57bf.png133671934398822537 0
+57C:\Users\Dilip Raj\Desktop\Forkify\dist\logo.726d37a8.png133671934399674212 0
+58C:\Users\Dilip Raj\Desktop\Forkify\dist\index.f7626f62.css133671934400565659 0
+62C:\Users\Dilip Raj\Desktop\Forkify\dist\index.f7626f62.css.map133671934400606557 0
+57C:\Users\Dilip Raj\Desktop\Forkify\dist\index.e37f48ea.js133671934409540162 0
+61C:\Users\Dilip Raj\Desktop\Forkify\dist\index.e37f48ea.js.map133671934409602337 0
