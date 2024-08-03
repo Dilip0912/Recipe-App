@@ -1,7 +1,8 @@
 // console.log("Test");
 // console.log("acsdvcyl");
 import icons from 'url:../img/icons.svg'
-console.log(icons);
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 const recipeContainer=document.querySelector(".recipe");
 
 
@@ -19,10 +20,14 @@ const renderSpinner=function(parentEl){
 
 const showRecipe = async function () {
   try {
-    renderSpinner(recipeContainer);
+
+    const id=window.location.hash.slice(1);   //Hash is the id in website url.
+
+    if(!id) return;
     //Loading recipe
+    renderSpinner(recipeContainer);
     const res = await fetch(
-      "https://forkify-api.herokuapp.com/api/v2/recipes/5ed6604591c37cdc054bc886"
+      `https://forkify-api.herokuapp.com/api/v2/recipes/${id}`
     );
     const data=await res.json();
 
@@ -138,4 +143,8 @@ const showRecipe = async function () {
         alert(err);
   }
 };
-showRecipe();
+// showRecipe();
+
+["hashchange","load"].forEach(ev=>window.addEventListener(ev,showRecipe))    //Listening for load and hash event
+// window.addEventListener("hashchange",showRecipe);
+// window.addEventListener("load",showRecipe);
