@@ -17,6 +17,10 @@ class recipeView{
         this.#parentElement.innerHTML=" ";        
     }
 
+    addHandlerRender(handler){
+      ["hashchange","load"].forEach(ev=>window.addEventListener(ev,handler))    //Listening for load and hash event
+    }
+
     renderSpinner=function(){
         const html=`
             <div class="spinner">

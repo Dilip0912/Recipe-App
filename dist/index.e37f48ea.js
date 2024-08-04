@@ -585,8 +585,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"aenu9":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _webImmediateJs = require("core-js/modules/web.immediate.js"); //Listening for load and hash event
- // window.addEventListener("hashchange",showRecipe);
+var _webImmediateJs = require("core-js/modules/web.immediate.js"); // window.addEventListener("hashchange",showRecipe);
  // window.addEventListener("load",showRecipe);
 var _modelJs = require("./model.js");
 var _recipeViewJs = require("./view/recipeView.js");
@@ -608,10 +607,10 @@ const controlRecipe = async function() {
     }
 };
 // showRecipe();
-[
-    "hashchange",
-    "load"
-].forEach((ev)=>window.addEventListener(ev, controlRecipe));
+const init = function() {
+    (0, _recipeViewJsDefault.default).addHandlerRender(controlRecipe);
+};
+init();
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js/modules/web.immediate.js":"49tUX","regenerator-runtime/runtime":"dXNgZ","./model.js":"Y4A21","./view/recipeView.js":"7Olh7"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -2500,6 +2499,7 @@ parcelHelpers.export(exports, "API_URL", ()=>API_URL);
 const API_URL = "https://forkify-api.herokuapp.com/api/v2/recipes";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hGI1E":[function(require,module,exports) {
+//Helper file contain utility function or reusable piece of code
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getJson", ()=>getJson);
@@ -24521,6 +24521,10 @@ if (DESCRIPTORS && !("size" in URLSearchParamsPrototype)) defineBuiltInAccessor(
 });
 
 },{"12f474df670119":"92ZIi","4e0abd277a1d8126":"7GlkT","9470ae398f726300":"592rH"}],"ifXAY":[function(require,module,exports) {
+// In JavaScript, a configuration (config) file is used to store settings and 
+// configurations that your application or a specific module within your 
+// application needs to operate. These settings can include environment 
+// variables, database connection strings, API endpoints, feature flags, and other customizable parameters.
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "API_URL", ()=>API_URL);
@@ -24546,6 +24550,13 @@ class recipeView {
     }
     #clear() {
         this.#parentElement.innerHTML = " ";
+    }
+    addHandlerRender(handler) {
+        [
+            "hashchange",
+            "load"
+        ].forEach((ev)=>window.addEventListener(ev, handler)) //Listening for load and hash event
+        ;
     }
     renderSpinner = function() {
         const html = `
