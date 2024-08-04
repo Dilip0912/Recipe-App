@@ -603,7 +603,8 @@ const controlRecipe = async function() {
         //2.Redndering recipe
         (0, _recipeViewJsDefault.default).render(_modelJs.state.recipe);
     } catch (err) {
-        console.log(err);
+        // console.log(err);
+        (0, _recipeViewJsDefault.default).renderError();
     }
 };
 // showRecipe();
@@ -2488,7 +2489,8 @@ const loadRecipe = async function(id) {
         };
         console.log(state.recipe);
     } catch (err) {
-        console.log(err);
+        // console.log(err);
+        throw err;
     }
 };
 
@@ -2496,7 +2498,9 @@ const loadRecipe = async function(id) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "API_URL", ()=>API_URL);
+parcelHelpers.export(exports, "TIMEOUT_SEC", ()=>TIMEOUT_SEC);
 const API_URL = "https://forkify-api.herokuapp.com/api/v2/recipes";
+const TIMEOUT_SEC = 10;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hGI1E":[function(require,module,exports) {
 //Helper file contain utility function or reusable piece of code
@@ -2504,7 +2508,7 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getJson", ()=>getJson);
 var _coreJs = require("core-js");
-var _config = require("./view/config");
+var _configJs = require("./config.js");
 const timeout = function(s) {
     return new Promise(function(_, reject) {
         (0, _coreJs.setTimeout)(function() {
@@ -2516,7 +2520,7 @@ const getJson = async function(url) {
     try {
         const res = await Promise.race([
             fetch(url),
-            timeout((0, _config.TIMEOUT_SEC))
+            timeout((0, _configJs.TIMEOUT_SEC))
         ]);
         const data = await res.json();
         if (!res.ok) throw new Error(`${data.message} (${res.status})`);
@@ -2526,7 +2530,7 @@ const getJson = async function(url) {
     }
 };
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js":"h5Izt","./view/config":"ifXAY"}],"h5Izt":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","core-js":"h5Izt","./config.js":"k5Hzs"}],"h5Izt":[function(require,module,exports) {
 "use strict";
 module.exports = require("b95880c672c530fc");
 
@@ -24520,19 +24524,7 @@ if (DESCRIPTORS && !("size" in URLSearchParamsPrototype)) defineBuiltInAccessor(
     enumerable: true
 });
 
-},{"12f474df670119":"92ZIi","4e0abd277a1d8126":"7GlkT","9470ae398f726300":"592rH"}],"ifXAY":[function(require,module,exports) {
-// In JavaScript, a configuration (config) file is used to store settings and 
-// configurations that your application or a specific module within your 
-// application needs to operate. These settings can include environment 
-// variables, database connection strings, API endpoints, feature flags, and other customizable parameters.
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "API_URL", ()=>API_URL);
-parcelHelpers.export(exports, "TIMEOUT_SEC", ()=>TIMEOUT_SEC);
-const API_URL = "https://forkify-api.herokuapp.com/api/v2/recipes";
-const TIMEOUT_SEC = 10;
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7Olh7":[function(require,module,exports) {
+},{"12f474df670119":"92ZIi","4e0abd277a1d8126":"7GlkT","9470ae398f726300":"592rH"}],"7Olh7":[function(require,module,exports) {
 //Using classes bcoz there will be parent class containing some method which some view inherit
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -24542,6 +24534,8 @@ var _fractional = require("fractional");
 class recipeView {
     #parentElement = document.querySelector(".recipe");
     #data;
+    #errorMessage = "we could not find that recipe.Please try another one";
+    #successMessage;
     render(data) {
         this.#data = data;
         const markup = this.#generateMarkup();
@@ -24557,6 +24551,30 @@ class recipeView {
             "load"
         ].forEach((ev)=>window.addEventListener(ev, handler)) //Listening for load and hash event
         ;
+    }
+    renderError(message = this.#errorMessage) {
+        const markup = `<div class="error">
+            <div>
+              <svg>
+                <use href="${(0, _iconsSvgDefault.default)}#icon-alert-triangle"></use>
+              </svg>
+            </div>
+            <p>${message}</p>
+          </div>`;
+        this.#clear();
+        this.#parentElement.insertAdjacentHTML("afterbegin", markup);
+    }
+    renderMessage(message = this.#successMessage) {
+        const markup = `<div class="message">
+            <div>
+              <svg>
+                <use href="${(0, _iconsSvgDefault.default)}#icon-smile"></use>
+              </svg>
+            </div>
+            <p>${message}</p>
+          </div>`;
+        this.#clear();
+        this.#parentElement.insertAdjacentHTML("afterbegin", markup);
     }
     renderSpinner = function() {
         const html = `
